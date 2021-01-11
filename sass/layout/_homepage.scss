@@ -68,11 +68,13 @@
     right: 50%;
     transform: translate(50%, 0);
     width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
 
     animation: fadeIn 1.5s;
 
     @include respond(small-desktop) {
-      bottom: 24%;
+      bottom: 23%;
     }
 
     @include respond(mini-desktop) {
@@ -102,7 +104,7 @@
     display: flex;
     position: absolute;
     z-index: 10;
-    bottom: 11%;
+    bottom: 9%;
     right: 50%;
     transform: translate(50%, 0);
     overflow-y: hidden;
@@ -121,7 +123,7 @@
 
     @include respond(phone) {
       line-height: 5rem;
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     @include respond(phone-small) {
