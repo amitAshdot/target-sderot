@@ -55,17 +55,19 @@
   }
 
   &__top-text {
-    display: flex;
-    position: absolute;
-    z-index: 10;
-    bottom: 23%;
-    right: 50%;
-    transform: translate(50%, 0);
+    overflow-y: hidden;
     width: fit-content;
     line-height: 8.5rem;
     color: white;
     padding: 0 1rem;
     background: black;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    bottom: 20%;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: fit-content;
 
     animation: fadeIn 1.5s;
 
@@ -89,17 +91,10 @@
       overflow: hidden;
     }
     @include respond(phone-small) {
-      line-height: 4rem;
-      font-size: 2.3rem;
-      width: 72vw;
-    }
+      line-height: 5rem;
+      font-size: 4rem;
 
-    &-right {
-      overflow-y: hidden;
-    }
-
-    &-left {
-      overflow-y: hidden;
+      // width: 72vw;
     }
   }
 
@@ -107,7 +102,7 @@
     display: flex;
     position: absolute;
     z-index: 10;
-    bottom: 10%;
+    bottom: 11%;
     right: 50%;
     transform: translate(50%, 0);
     overflow-y: hidden;
@@ -130,8 +125,8 @@
     }
 
     @include respond(phone-small) {
-      line-height: 4rem;
-      font-size: 2.3rem;
+      line-height: 5rem;
+      font-size: 2.7rem;
     }
   }
 }
