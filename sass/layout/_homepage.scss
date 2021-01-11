@@ -19,7 +19,7 @@
 }
 
 .main-image {
-  font-family: 'adoveFnt22-bold';
+  font-family: "adoveFnt22-bold";
   position: relative;
   width: 100%;
   overflow-y: hidden;
@@ -90,7 +90,7 @@
     }
     @include respond(phone-small) {
       line-height: 5rem;
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
 
     &-right {
@@ -181,7 +181,7 @@
   }
 
   &__title {
-    font-family: 'adoveFnt22-ultrabold';
+    font-family: "adoveFnt22-ultrabold";
     display: flex;
     margin: 2rem auto -3rem;
     width: fit-content;
@@ -230,7 +230,7 @@
 }
 
 .contact-us-section {
-  font-family: 'adoveFnt22-bold';
+  font-family: "adoveFnt22-bold";
   padding: 6rem 0 6rem;
   @include respond(phone) {
     padding: 8rem 0 0;
@@ -425,7 +425,7 @@
     }
 
     &-title {
-      font-family: 'adoveFnt22-bold';
+      font-family: "adoveFnt22-bold";
 
       font-size: 4rem;
       position: relative;
@@ -469,7 +469,7 @@
       &-top {
         @include respond(phone) {
           &::after {
-            content: '\A';
+            content: "\A";
             white-space: pre-line;
           }
         }
@@ -478,7 +478,7 @@
         white-space: inherit;
         @include respond(phone) {
           &::before {
-            content: '\A';
+            content: "\A";
             white-space: pre-line;
           }
         }
@@ -503,7 +503,7 @@
   }
 
   &-title {
-    font-family: 'adoveFnt22-bold';
+    font-family: "adoveFnt22-bold";
     color: $color-primary-dark;
     font-size: 9rem;
     margin-bottom: 4rem;
