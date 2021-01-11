@@ -95,8 +95,7 @@
     @include respond(phone-small) {
       line-height: 5rem;
       font-size: 4rem;
-
-      // width: 72vw;
+      padding: 0 1rem;
     }
   }
 
