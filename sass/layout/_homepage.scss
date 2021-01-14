@@ -685,23 +685,34 @@
     margin-top: -2rem;
     margin-bottom: 0rem;
     display: flex;
-    position: absolute;
-    bottom: 0%;
-    display: flex;
-    position: sticky;
   }
 
+  &__right {
+    width: 50%;
+    align-self: center;
+  }
+  &__left {
+    width: 70%;
+    align-self: center;
+  }
   &-logo {
     @include respond(tab-port) {
-      width: 56%;
-      object-fit: contain;
+      width: 100%;
+
+      // width: 100%;
+      // object-fit: contain;
+      // padding: 5rem 2rem 5rem 5rem;
     }
   }
 
   .smiley {
     @include respond(tab-port) {
-      width: 40%;
-      object-fit: contain;
+      display: block;
+      width: 100%;
+
+      // width: 50%;
+      // object-fit: contain;
+      // height: 40rem;
     }
   }
 }
