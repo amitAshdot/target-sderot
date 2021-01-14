@@ -136,6 +136,7 @@
 .location-section {
   padding: 10rem 2rem;
   text-align: center;
+  overflow: hidden;
 
   @include respond(phone) {
     padding: 7rem 1rem;
@@ -674,8 +675,6 @@
 }
 
 .footer {
-  position: absolute;
-
   width: 50%;
   margin-top: -10px;
   margin-right: auto;
@@ -686,6 +685,10 @@
     margin-top: -2rem;
     margin-bottom: 0rem;
     display: flex;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    position: sticky;
   }
 
   &-logo {
