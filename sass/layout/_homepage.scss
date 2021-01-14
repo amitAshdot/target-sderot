@@ -713,6 +713,10 @@
     padding: 0 5rem 5rem 5rem;
 
     @include respond(tab-port) {
+      padding: 0 0rem 0rem 10rem;
+    }
+
+    @include respond(tab-port) {
       width: 60%;
       align-self: auto;
       justify-self: center;
