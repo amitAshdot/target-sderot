@@ -231,6 +231,10 @@
 .contact-us-section {
   font-family: "adoveFnt22-bold";
   padding: 6rem 0 6rem;
+
+  &:last-child {
+    padding: 6rem 0 0rem;
+  }
   @include respond(phone) {
     padding: 8rem 0 0;
 
@@ -675,7 +679,7 @@
 }
 
 .footer {
-  width: 50%;
+  width: 100%;
   margin-top: -10px;
   margin-right: auto;
   margin-bottom: 6rem;
@@ -702,37 +706,46 @@
       width: 25%;
     }
     @include respond(tab-port) {
-      width: 35%;
+      width: 40%;
     }
   }
   &__left {
-    width: 70%;
-    align-self: center;
-    justify-self: center;
-    place-self: center;
-    padding: 0 5rem 5rem 5rem;
-
-    @include respond(tab-port) {
+    width: 60%;
+    height: 20rem;
+    margin-right: auto;
+    position: relative;
+    @include respond(mini-desktop) {
       padding: 0 0rem 0rem 10rem;
     }
 
     @include respond(tab-port) {
+      display: flex;
       width: 60%;
-      align-self: auto;
+      align-self: center;
       justify-self: center;
-      place-self: center;
-      padding: 10rem;
+      position: relative;
     }
   }
   &-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-30%, 0px);
+    @include respond(mini-desktop) {
+      left: 40%;
+    }
+
     @include respond(tab-port) {
-      width: 100%;
+      width: 80%;
       align-self: center;
       justify-self: center;
+      transform: translate(-30%, 0px);
     }
 
     @include respond(phone) {
-      width: 100%;
+      width: 80%;
+      bottom: 0%;
+      transform: translate(-30%, -60%);
     }
   }
 
