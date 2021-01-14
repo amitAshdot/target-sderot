@@ -685,23 +685,50 @@
     margin-top: -2rem;
     margin-bottom: 0rem;
     display: flex;
+    place-content: space-between;
+  }
+
+  @include respond(phone) {
+    width: 100vw;
+    margin-top: -2rem;
+    margin-bottom: 0rem;
+    display: flex;
   }
 
   &__right {
     width: 50%;
     align-self: center;
+    @include respond(tab-port) {
+      width: 25%;
+    }
+    @include respond(tab-port) {
+      width: 35%;
+    }
   }
   &__left {
     width: 70%;
     align-self: center;
+    justify-self: center;
+    place-self: center;
+    padding: 0 5rem 5rem 5rem;
+
+    @include respond(tab-port) {
+      width: 60%;
+      align-self: auto;
+      justify-self: center;
+      place-self: center;
+      padding: 10rem;
+    }
   }
   &-logo {
     @include respond(tab-port) {
       width: 100%;
+      align-self: center;
+      justify-self: center;
+    }
 
-      // width: 100%;
-      // object-fit: contain;
-      // padding: 5rem 2rem 5rem 5rem;
+    @include respond(phone) {
+      width: 100%;
     }
   }
 
@@ -709,10 +736,11 @@
     @include respond(tab-port) {
       display: block;
       width: 100%;
+    }
 
-      // width: 50%;
-      // object-fit: contain;
-      // height: 40rem;
+    @include respond(phone) {
+      display: block;
+      width: 100%;
     }
   }
 }
