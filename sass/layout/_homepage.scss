@@ -453,10 +453,6 @@
     &-text {
       width: 100%;
 
-      &:nth-child(2) {
-        // padding: 0rem 3rem;
-      }
-
       @include respond(phone) {
         font-size: 2.5rem;
         line-height: 4rem;
@@ -538,7 +534,6 @@
     }
 
     &-span {
-      //   transform: translateY(100%);
       opacity: 0;
       transition: all 0.5s;
       transition-delay: 0.5s;
